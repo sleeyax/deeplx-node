@@ -1,0 +1,27 @@
+{
+  "name": "deeplx-node",
+  "version": "1.0.0",
+  "description": "Port of deeplx: an unofficial package to translate text using DeepL",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "clean": "npx rimraf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "deeplx",
+    "deeplx node"
+  ],
+  "author": "Sleeyax",
+  "license": "MIT",
+  "dependencies": {
+    "centra": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/centra": "^2.2.0",
+    "rimraf": "^4.4.1",
+    "typescript": "^5.0.2"
+  }
+}
